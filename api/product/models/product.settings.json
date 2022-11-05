@@ -35,9 +35,9 @@
       "type": "uid",
       "targetField": "title"
     },
-    "categories": {
-      "collection": "category",
-      "via": "products"
+    "category": {
+      "via": "products",
+      "model": "category"
     },
     "status": {
       "type": "enumeration",
@@ -47,6 +47,10 @@
       ],
       "default": "published",
       "required": true
+    },
+    "weight": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
